@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<link href="css/estilos.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+<title> Baloo Store </title>
+ <!-- Estilos CSS solo para este HTML secundario -->
+ <style>
+ .decorative-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.decorative-image img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0; 
+    padding: 0;
+}
+
+/* Estilos para centrar el h2 */
+h2 {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    
+</style>
+</head>
+<body>
+<header>
+    <nav>
+    </div>
+    <div class="decorative-image">
+    <img src="imagenes/imagen_decorativa.png" alt="Descripción de la imagen">
+    </div>
+        <div class="menu-btn" id="menu-btn-header">
+            <div class="menu-btn__burger"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="iphone_nuevos.html">iPhone Nuevos</a></li>
+            <li><a href="usados_tester.html">Usados | Tester</a></li>
+            <li><a href="macbook_imac.html">MacBook | iMac</a></li>
+            <li><a href="ipad.html">iPad</a></li>
+            <li><a href="airpods.html">AirPods</a></li>
+            <li><a href="apple_watch.html">Apple Watch</a></li>
+        </ul>
+            <h2>MacBook | iMac</h2>
+     </nav>
+ </header>
+    
+<main>
+    <form id="formulario-busqueda" action="buscar.php" method="get">
+        <input type="text" name="q" placeholder="Qué estas buscando?">
+        <button type="submit">Buscar</button>
+    </form>
+</main>
+<body>
+    <footer>
+        <nav>
+            <ul class="footer-menu">
+                <li><a href="#" onclick="toggleMenu()">Menú</a></li>
+                <li><a href="#">Favoritos</a></li>
+                <li><a href="#formulario-busqueda">Buscar</a></li>
+                <li><a href="#">Mi cuenta</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Baloo Store. Todos los derechos reservados.</p>
+    </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+    
+        menuBtn.addEventListener('click', function () {
+            menu.classList.toggle('active');
+        });
+    });
+
+    function toggleMenu() {
+        const menuBtn = document.getElementById('menu-btn-header');
+        const menu = document.querySelector('.menu');
+    
+        menu.classList.toggle('active');
+    }
+</script> 
+</body>
+</html>
